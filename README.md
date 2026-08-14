@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Anthony Ecom — AI-Powered Growth Agency Website
 
-## Getting Started
+Marketing site for **Anthony Ecom Buy-Up LLC** — an AI-powered digital marketing
+agency for eCommerce brands. Built with Next.js (App Router) + Tailwind CSS 4.
+Fully static, mobile-first, dark premium design.
 
-First, run the development server:
+## Pages
+
+- `/` — full landing page (hero, stats, pain points, services, AI edge, case studies, process, comparison, testimonials, CTA)
+- `/services` — six service disciplines + AI layer
+- `/case-studies` — 8 documented results
+- `/about` — founder story, differentiators, operating principles
+- `/contact` — growth-audit form + FAQ
+- `/privacy`, `/terms` — legal
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build (all routes prerender statically)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploying to Vercel via GitHub
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Push this repo to GitHub:
+   ```bash
+   git remote add origin https://github.com/<your-username>/anthony-ecom.git
+   git push -u origin main
+   ```
+2. On [vercel.com](https://vercel.com) → **Add New Project** → import the repo.
+   Vercel auto-detects Next.js; no configuration needed. Deploy.
+3. Add your custom domain (`anthonyecom.com`) under **Project → Settings → Domains**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contact form
 
-## Learn More
+The form on `/contact` posts to [FormSubmit](https://formsubmit.co) and delivers
+to `info@anthonyecom.com`. **One-time setup:** the first submission triggers a
+confirmation email to that inbox — click the activation link once and all
+subsequent submissions flow through. No backend or API keys required.
 
-To learn more about Next.js, take a look at the following resources:
+## Content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All copy, stats, case studies, testimonials and contact details live in one
+file: [`lib/data.ts`](lib/data.ts). Edit that file to change any content on the
+site — no component changes needed.
