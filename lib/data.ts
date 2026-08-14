@@ -413,3 +413,15 @@ export const faqs = [
     a: "A written weekly summary — what changed, why, and what happens next — plus a live dashboard with the metrics that actually matter: contribution margin, new-customer CAC and blended ROAS.",
   },
 ];
+
+export const leadMagnet = {
+  eyebrow: "Free Resource",
+  title: "Know your real margins — or you don't have a real business.",
+  body: "Especially in eCommerce. Our Profit Analysis Template gives you a holistic view of your true numbers — contribution margin, real CAC, break-even ROAS per product — and takes the guesswork away. The same sheet we open on day one of every engagement.",
+  bullets: [
+    "Contribution margin per SKU, calculated for you",
+    "True new-customer CAC across all channels",
+    "Break-even ROAS targets you can hand to any media buyer",
+  ],
+  cta: "Send Me the Free Template",
+};

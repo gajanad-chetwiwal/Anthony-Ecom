@@ -4,6 +4,7 @@ import Counter from "@/components/Counter";
 import Marquee from "@/components/Marquee";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import CTASection from "@/components/CTASection";
+import LeadMagnet from "@/components/LeadMagnet";
 import {
   heroStats,
   niches,
@@ -347,6 +348,9 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
+
+      {/* ================= LEAD MAGNET ================= */}
+      <LeadMagnet />
 
       {/* ================= TESTIMONIALS ================= */}
       <section className="border-t border-line">
