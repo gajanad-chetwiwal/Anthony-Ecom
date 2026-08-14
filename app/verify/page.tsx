@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Business Verification",
   description:
     "Official registration and verification details for Anthony Ecom Buy-Up LLC — for banks, payment processors, and partners performing due diligence.",
+  robots: { index: false, follow: false },
 };
 
 const entityRows = [
@@ -24,9 +25,9 @@ const verifySteps = [
   {
     title: "Wyoming Secretary of State — Business Search",
     body: "Anthony Ecom Buy-Up LLC is registered with the Wyoming Secretary of State, Business Division. Any bank, processor or partner can confirm our registration, status and registered agent directly on the official state registry — free, no account required.",
-    linkLabel: "wyobiz.wyo.gov — Business Filing Search",
-    href: "https://wyobiz.wyo.gov/Business/FilingSearch.aspx",
-    note: "Search for “Anthony Ecom Buy-Up” under Filing Search.",
+    linkLabel: "View our official Wyoming filing",
+    href: "https://wyobiz.wyo.gov/Business/FilingDetails.aspx?eFNum=243112094070154192237169116251246249244108142233",
+    note: "Direct link to our record on the Wyoming state registry.",
   },
   {
     title: "Certificate of Good Standing",
