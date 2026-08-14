@@ -15,7 +15,7 @@ function BarsSlide() {
             Blended ROAS · Live
           </p>
           <p className="mt-1.5 font-display text-4xl font-bold tracking-tight text-cream">
-            6.2<span className="text-volt">x</span>
+            4.6<span className="text-volt">x</span>
           </p>
         </div>
         <span className="rounded-full border border-volt/25 bg-volt/10 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-volt">
@@ -37,7 +37,7 @@ function BarsSlide() {
         ))}
       </div>
       <div className="mt-3 flex justify-between font-mono text-[9px] uppercase tracking-widest text-muted/60">
-        <span>Q1</span><span>Q2</span><span>Q3</span><span>Now</span>
+        <span>Wk 1</span><span>Wk 4</span><span>Wk 8</span><span>Now</span>
       </div>
     </div>
   );
@@ -92,11 +92,11 @@ function MarginSlide() {
             Contribution Margin · Tracked
           </p>
           <p className="mt-1.5 font-display text-4xl font-bold tracking-tight text-cream">
-            $1.5<span className="text-volt">M</span>
+            $52<span className="text-volt">k</span>
           </p>
         </div>
         <span className="rounded-full border border-volt/25 bg-volt/10 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-volt">
-          21 months
+          3 months
         </span>
       </div>
       <div className="mt-auto">
@@ -126,7 +126,7 @@ function MarginSlide() {
           <circle cx="320" cy="10" r="10" fill="rgba(201,247,58,0.25)" />
         </svg>
         <div className="mt-3 flex justify-between font-mono text-[9px] uppercase tracking-widest text-muted/60">
-          <span>Month 1</span><span>Month 11</span><span>Month 21</span>
+          <span>Week 1</span><span>Week 6</span><span>Week 12</span>
         </div>
       </div>
     </div>
@@ -164,7 +164,7 @@ export default function HeroShowcase() {
       {/* floating glass chips */}
       <div className="animate-float-slow glass absolute -top-5 -right-2 z-10 hidden rounded-2xl px-4 py-3 sm:block">
         <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Best return</p>
-        <p className="mt-0.5 font-display text-lg font-bold text-volt">18.55x</p>
+        <p className="mt-0.5 font-display text-lg font-bold text-volt">9.42x</p>
       </div>
       <div
         className="animate-float-slow glass absolute -bottom-6 -left-3 z-10 hidden rounded-2xl px-4 py-3 sm:block"

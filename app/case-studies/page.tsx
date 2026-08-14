@@ -8,7 +8,7 @@ import { caseStudies, resultsStats } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Case Studies",
   description:
-    "Documented, audited results across electric mobility, jewelry, home decor, health, toys and automotive — from 3.13x to 18.55x ROAS.",
+    "Documented, audited results across electric mobility, jewelry, home decor, health, toys and automotive — from 3.13x to 9.42x ROAS.",
 };
 
 export default function CaseStudiesPage() {

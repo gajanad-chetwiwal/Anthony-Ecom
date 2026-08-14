@@ -20,10 +20,10 @@ export const navLinks = [
 ];
 
 export const heroStats = [
-  { value: 12, prefix: "$", suffix: "M+", label: "Ad spend managed", decimals: 0 },
-  { value: 6.2, prefix: "", suffix: "x", label: "Avg. blended ROAS", decimals: 1 },
-  { value: 40, prefix: "", suffix: "+", label: "Brands scaled", decimals: 0 },
-  { value: 18.5, prefix: "", suffix: "x", label: "Best documented ROAS", decimals: 1 },
+  { value: 480, prefix: "$", suffix: "k+", label: "Ad spend managed", decimals: 0 },
+  { value: 4.6, prefix: "", suffix: "x", label: "Avg. blended ROAS", decimals: 1 },
+  { value: 12, prefix: "", suffix: "+", label: "Brands under management", decimals: 0 },
+  { value: 9.4, prefix: "", suffix: "x", label: "Best documented ROAS", decimals: 1 },
 ];
 
 export const niches = [
@@ -102,7 +102,7 @@ export const services = [
     bullets: [
       "AI-scored creative testing sprints",
       "Full-funnel retargeting mapped to LTV",
-      "UGC & static frameworks proven across 40+ brands",
+      "UGC & static frameworks proven on our own portfolio brands",
     ],
   },
   {
@@ -180,11 +180,11 @@ export const caseStudies: CaseStudy[] = [
     client: "Electric Mobility Brand",
     niche: "E-Scooters & Skateboards",
     region: "US & UK",
-    period: "7 months",
+    period: "10 weeks",
     roas: 4.55,
-    revenue: "$535k",
+    revenue: "$86k",
     summary:
-      "Rebuilt Search and PMax around contribution margin across two storefronts, layered AI budget pacing on top, and scaled non-branded spend 3x while holding efficiency through peak season.",
+      "Rebuilt Search and PMax around contribution margin across two storefronts, layered AI budget pacing on top, and doubled non-branded spend while holding efficiency week over week.",
     featured: true,
   },
   {
@@ -192,11 +192,11 @@ export const caseStudies: CaseStudy[] = [
     client: "Automotive Accessories Brand",
     niche: "Automotive",
     region: "US",
-    period: "2 months",
-    roas: 18.55,
-    revenue: "$118k",
+    period: "8 weeks",
+    roas: 9.42,
+    revenue: "$41k",
     summary:
-      "Found the entire margin story hiding in a broken shopping feed. Rebuilt titles and attributes, restructured by margin tier, and let the AI bidding layer do the rest. Best documented return in our portfolio.",
+      "Found the entire margin story hiding in a broken shopping feed. Rebuilt titles and attributes, restructured by margin tier, and let the AI bidding layer do the rest. Our best documented return so far.",
     featured: true,
   },
   {
@@ -205,20 +205,20 @@ export const caseStudies: CaseStudy[] = [
     niche: "Jewelry & Fashion",
     region: "Germany",
     period: "30 days",
-    roas: 11.27,
-    revenue: "€40k",
+    roas: 6.8,
+    revenue: "€22k",
     summary:
       "A holiday-window sprint: predictive budget models identified exactly which products could absorb aggressive spend, and we scaled into the season instead of reacting to it.",
     featured: true,
   },
   {
-    slug: "home-decor-dropship",
+    slug: "home-decor",
     client: "Home Decor Brand",
     niche: "Home & Living",
     region: "US",
-    period: "5 months",
-    roas: 9.42,
-    revenue: "$180k",
+    period: "2 months",
+    roas: 5.12,
+    revenue: "$34k",
     summary:
       "High-SKU catalog with zero structure. We rebuilt the feed, sculpted queries away from branded terms, and turned a break-even account into the most profitable channel in the business.",
   },
@@ -227,11 +227,11 @@ export const caseStudies: CaseStudy[] = [
     client: "Sleep & Wellness Brand",
     niche: "Health & Wellness",
     region: "US",
-    period: "4 months",
-    roas: 5.77,
-    revenue: "$60k",
+    period: "6 weeks",
+    roas: 3.9,
+    revenue: "$18k",
     summary:
-      "A compliance-heavy category everyone else refused to touch. Careful policy-safe structures plus retention flows moved a third of revenue off paid entirely.",
+      "A compliance-heavy category everyone else refused to touch. Careful policy-safe structures plus retention flows moved a meaningful share of revenue off paid entirely.",
   },
   {
     slug: "kids-toys",
@@ -239,19 +239,19 @@ export const caseStudies: CaseStudy[] = [
     niche: "Kids & Toys",
     region: "US",
     period: "7 weeks",
-    roas: 6.95,
-    revenue: "$20k",
+    roas: 4.7,
+    revenue: "$12k",
     summary:
-      "Q4 sprint from a standing start. AI creative scoring picked the winning angles in week one; we spent the remaining six scaling them.",
+      "A seasonal sprint from a standing start. AI creative scoring picked the winning angles in week one; we spent the remaining six scaling them.",
   },
   {
     slug: "health-brand",
     client: "Health & Wellness Brand",
     niche: "Health & Wellness",
     region: "US",
-    period: "3 months",
+    period: "8 weeks",
     roas: 3.13,
-    revenue: "$49.9k",
+    revenue: "$15.5k",
     summary:
       "Rebuilt measurement first — the old account was optimizing to a conversion event that double-counted. Real numbers, then real scale.",
   },
@@ -260,18 +260,18 @@ export const caseStudies: CaseStudy[] = [
     client: "In-House Portfolio Brand",
     niche: "eCommerce",
     region: "US",
-    period: "21 months",
+    period: "3 months",
     roas: 4.64,
-    revenue: "$1.5M",
+    revenue: "$52k",
     summary:
-      "One of our own. Every strategy we sell gets tested here first, with our own money — 21 months of compounding proof that the playbook works.",
+      "One of our own. Every strategy we sell gets tested here first, with our own money — three months of compounding proof that the playbook works.",
   },
 ];
 
 export const resultsStats = [
-  { value: 7.1, suffix: "x", label: "Average ROAS across engagements", decimals: 1 },
-  { value: 18.55, suffix: "x", label: "Best documented single-account return", decimals: 2 },
-  { value: 6, suffix: "", label: "Countries actively running accounts", decimals: 0 },
+  { value: 5.2, suffix: "x", label: "Average ROAS across engagements", decimals: 1 },
+  { value: 9.42, suffix: "x", label: "Best documented single-account return", decimals: 2 },
+  { value: 4, suffix: "", label: "Countries actively running accounts", decimals: 0 },
 ];
 
 export const processSteps = [
@@ -363,25 +363,25 @@ export const values = [
 export const testimonials = [
   {
     quote:
-      "Every previous agency reported a ROAS that never showed up in our P&L. Anthony Ecom rebuilt our tracking in week one, told us the real number was half of what we thought, and then actually doubled it. That honesty is why we're still here.",
+      "Every previous agency reported a ROAS that never showed up in our P&L. Anthony Ecom rebuilt our tracking in week one, told us the real number was half of what we thought, and then actually improved it. That honesty is why we're still here.",
     author: "Founder",
     company: "Electric Mobility Brand, UK",
   },
   {
     quote:
-      "Paid hadn't moved in three quarters. They found a broken conversion event our old agency had been optimizing to for a year. Nine months in, non-branded revenue is up 3x and I can finally read our reports without a translator.",
+      "Paid hadn't moved in months. They found a broken conversion event our old agency had been optimizing to the whole time. Eight weeks in, non-branded revenue is up 60% and I can finally read our reports without a translator.",
     author: "Operations Director",
     company: "Home & Kitchen Brand, US",
   },
   {
     quote:
-      "We came in six weeks before the holiday window. Their forecasting models told us exactly which products could take aggressive budget — we finished the season at 11x on cold traffic. I've never seen scaling look that calm.",
+      "We came in six weeks before the holiday window. Their forecasting models told us exactly which products could take aggressive budget — we finished the season at close to 7x on cold traffic. I've never seen scaling look that calm.",
     author: "eCommerce Manager",
     company: "Jewelry Brand, Germany",
   },
   {
     quote:
-      "Our category is a compliance nightmare and every agency before them told us Google was impossible. They built policy-safe structures, moved a third of our revenue to email, and made the whole machine boring — in the best possible way.",
+      "Our category is a compliance nightmare and every agency before them told us Google was impossible. They built policy-safe structures, started shifting revenue to email, and made the whole machine boring — in the best possible way.",
     author: "Managing Partner",
     company: "Health & Wellness Brand, US",
   },
