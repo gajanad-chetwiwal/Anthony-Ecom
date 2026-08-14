@@ -108,3 +108,87 @@ body {
   .animate-pulse-dot,
   .animate-float-slow { animation: none; }
 }
+
+/* ---------- liquid glass (Apple-style materials) ---------- */
+.glass {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.glass-deep {
+  background: linear-gradient(180deg, rgba(16, 16, 23, 0.72), rgba(10, 10, 15, 0.66));
+  -webkit-backdrop-filter: blur(28px) saturate(170%);
+  backdrop-filter: blur(28px) saturate(170%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* specular sheen sweep on hover */
+.sheen {
+  position: relative;
+  overflow: hidden;
+}
+.sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 32%,
+    rgba(255, 255, 255, 0.07) 46%,
+    rgba(255, 255, 255, 0.03) 52%,
+    transparent 64%
+  );
+  transform: translateX(-130%);
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+.sheen:hover::after {
+  transform: translateX(130%);
+}
+
+/* Apple-style slide crossfade (opacity + scale + blur) */
+.slide-stack {
+  display: grid;
+}
+.slide-stack > * {
+  grid-area: 1 / 1;
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.slide-hidden {
+  opacity: 0;
+  transform: scale(0.955) translateY(8px);
+  filter: blur(10px);
+  pointer-events: none;
+}
+.slide-active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  filter: blur(0);
+}
+
+@keyframes bar-rise {
+  from { transform: scaleY(0.2); }
+  to { transform: scaleY(1); }
+}
+.animate-bar-rise {
+  transform-origin: bottom;
+  animation: bar-rise 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide-stack > * { transition: opacity 0.3s ease; }
+  .slide-hidden { transform: none; filter: none; }
+  .sheen::after { display: none; }
+  .animate-bar-rise { animation: none; }
+}

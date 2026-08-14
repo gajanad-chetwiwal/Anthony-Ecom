@@ -5,6 +5,7 @@ import Marquee from "@/components/Marquee";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import CTASection from "@/components/CTASection";
 import LeadMagnet from "@/components/LeadMagnet";
+import HeroShowcase from "@/components/HeroShowcase";
 import {
   heroStats,
   niches,
@@ -49,8 +50,10 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="hero-glow pointer-events-none absolute inset-0" />
         <div className="bg-grid pointer-events-none absolute inset-0" />
-        <div className="relative mx-auto max-w-7xl px-5 pb-16 pt-32 sm:px-8 sm:pb-24 sm:pt-44">
-          <Reveal>
+        <div className="relative mx-auto max-w-7xl px-5 pb-16 pt-28 sm:px-8 sm:pb-24 sm:pt-40">
+          <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+            <div>
+              <Reveal>
             <div className="inline-flex items-center gap-2.5 rounded-full border border-line bg-card/60 px-4 py-2 backdrop-blur">
               <span className="animate-pulse-dot h-2 w-2 rounded-full bg-volt" />
               <span className="font-mono text-[11px] uppercase tracking-widest text-muted sm:text-xs">
@@ -59,7 +62,7 @@ export default function Home() {
             </div>
           </Reveal>
           <Reveal delay={100}>
-            <h1 className="mt-7 max-w-4xl font-display text-4xl font-bold leading-[1.05] tracking-tight text-cream sm:text-6xl lg:text-7xl">
+            <h1 className="mt-7 max-w-4xl font-display text-4xl font-bold leading-[1.05] tracking-tight text-cream sm:text-6xl lg:text-[3.6rem] lg:leading-[1.04] xl:text-[4rem]">
               Growth engineered by AI.{" "}
               <span className="text-volt">Proven in profit.</span>
             </h1>
@@ -87,13 +90,19 @@ export default function Home() {
                 See the Numbers →
               </Link>
             </div>
-          </Reveal>
+              </Reveal>
+            </div>
+
+            <Reveal delay={250} className="lg:justify-self-end lg:w-full">
+              <HeroShowcase />
+            </Reveal>
+          </div>
 
           {/* Stats band */}
           <Reveal delay={400}>
-            <div className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:mt-24 lg:grid-cols-4">
+            <div className="glass mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl sm:mt-20 lg:grid-cols-4">
               {heroStats.map((stat) => (
-                <div key={stat.label} className="bg-surface/80 p-6 backdrop-blur sm:p-8">
+                <div key={stat.label} className="bg-white/[0.03] p-6 sm:p-8">
                   <div className="font-display text-3xl font-bold tracking-tight text-cream sm:text-4xl">
                     <Counter
                       value={stat.value}
@@ -167,7 +176,7 @@ export default function Home() {
               <Reveal key={service.slug} delay={(i % 3) * 90}>
                 <Link
                   href={`/services#${service.slug}`}
-                  className="card-hover group flex h-full flex-col rounded-2xl border border-line bg-card p-7"
+                  className="card-hover sheen group flex h-full flex-col rounded-2xl border border-line bg-card p-7"
                 >
                   <span className="w-fit rounded-full border border-volt/25 bg-volt/[0.07] px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-volt">
                     {service.tag}
