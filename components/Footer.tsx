@@ -28,6 +28,7 @@ const footerCols = [
     links: [
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms of Service", href: "/terms" },
+      { label: "Verify Our LLC", href: "/verify" },
     ],
   },
 ];
@@ -46,7 +47,7 @@ export default function Footer() {
             <div className="mt-6 space-y-2 text-sm text-muted">
               <p>
                 <span className="font-mono text-[11px] uppercase tracking-widest text-muted/70">
-                  New business&nbsp;&nbsp;
+                  CEO Mail&nbsp;&nbsp;
                 </span>
                 <a href={`mailto:${site.emails.ceo}`} className="text-cream transition-colors hover:text-volt">
                   {site.emails.ceo}

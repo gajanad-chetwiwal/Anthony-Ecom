@@ -57,6 +57,33 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrains.variable}`}
     >
       <body className="font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: site.name,
+              legalName: site.legalName,
+              url: site.domain,
+              logo: `${site.domain}/icon.svg`,
+              founder: { "@type": "Person", name: site.founder, jobTitle: "Founder & CEO" },
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "31 Herring St",
+                addressLocality: "Cartersville",
+                addressRegion: "GA",
+                postalCode: "30120",
+                addressCountry: "US",
+              },
+              contactPoint: [
+                { "@type": "ContactPoint", email: site.emails.ceo, contactType: "CEO Mail" },
+                { "@type": "ContactPoint", email: site.emails.info, contactType: "customer service" },
+                { "@type": "ContactPoint", email: site.emails.support, contactType: "technical support" },
+              ],
+            }),
+          }}
+        />
         <Header />
         <main>{children}</main>
         <Footer />

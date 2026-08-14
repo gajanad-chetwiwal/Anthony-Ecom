@@ -52,7 +52,7 @@ export default function ContactPage() {
                 <div className="space-y-2.5 text-sm text-muted">
                   <p>
                     <span className="font-mono text-[11px] uppercase tracking-widest text-muted/70">
-                      New business&nbsp;&nbsp;
+                      CEO Mail&nbsp;&nbsp;
                     </span>
                     <a href={`mailto:${site.emails.ceo}`} className="text-cream transition-colors hover:text-volt">
                       {site.emails.ceo}

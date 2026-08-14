@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import CTASection from "@/components/CTASection";
 import { values, differentiators, site } from "@/lib/data";
@@ -35,8 +36,15 @@ export default function AboutPage() {
         <Reveal>
           <div className="grid gap-10 rounded-2xl border border-line bg-card p-8 sm:p-12 lg:grid-cols-[auto_1fr] lg:gap-14">
             <div className="flex flex-col items-start gap-5">
-              <div className="animate-float-slow flex h-28 w-28 items-center justify-center rounded-2xl border border-volt/30 bg-volt/[0.08] font-display text-5xl font-bold text-volt sm:h-36 sm:w-36 sm:text-6xl">
-                PA
+              <div className="glass relative h-40 w-40 overflow-hidden rounded-2xl sm:h-52 sm:w-52">
+                <Image
+                  src="/founder.jpg"
+                  alt="Papa Anthony Thomas, Founder & CEO of Anthony Ecom Buy-Up LLC"
+                  fill
+                  sizes="(min-width: 640px) 13rem, 10rem"
+                  className="object-cover"
+                  priority
+                />
               </div>
               <div>
                 <h2 className="font-display text-2xl font-bold tracking-tight text-cream">
