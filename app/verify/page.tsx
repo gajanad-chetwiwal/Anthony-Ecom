@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 const entityRows = [
   { label: "Legal entity name", value: "Anthony Ecom Buy-Up LLC" },
   { label: "Entity type", value: "Limited Liability Company (LLC)" },
-  { label: "State of formation", value: "Georgia, United States" },
-  { label: "Principal office", value: site.address },
+  { label: "State of formation", value: "Wyoming, United States" },
+  { label: "Physical / principal office", value: site.address },
   { label: "Founder & CEO", value: site.founder },
   { label: "Website", value: "anthonyecom.com" },
   { label: "CEO Mail", value: site.emails.ceo },
@@ -22,17 +22,17 @@ const entityRows = [
 
 const verifySteps = [
   {
-    title: "Georgia Secretary of State — Business Search",
-    body: "Anthony Ecom Buy-Up LLC is registered with the Georgia Secretary of State, Corporations Division. Any bank, processor or partner can confirm our registration, status and registered agent directly on the official state registry — no account required.",
-    linkLabel: "ecorp.sos.ga.gov/BusinessSearch",
-    href: "https://ecorp.sos.ga.gov/BusinessSearch",
-    note: "Search for “Anthony Ecom Buy-Up” under Business Search.",
+    title: "Wyoming Secretary of State — Business Search",
+    body: "Anthony Ecom Buy-Up LLC is registered with the Wyoming Secretary of State, Business Division. Any bank, processor or partner can confirm our registration, status and registered agent directly on the official state registry — free, no account required.",
+    linkLabel: "wyobiz.wyo.gov — Business Filing Search",
+    href: "https://wyobiz.wyo.gov/Business/FilingSearch.aspx",
+    note: "Search for “Anthony Ecom Buy-Up” under Filing Search.",
   },
   {
-    title: "Certificate of Existence (Good Standing)",
-    body: "A Certificate of Existence issued by the Georgia Secretary of State is available on request for institutions that require a state-issued document. Email us and we will provide a current copy, or it can be ordered directly from the Corporations Division.",
+    title: "Certificate of Good Standing",
+    body: "A Certificate of Good Standing issued by the Wyoming Secretary of State is available on request for institutions that require a state-issued document. Email us and we will provide a current copy, or it can be generated directly from the Wyoming state registry.",
     linkLabel: `Request via ${site.emails.ceo}`,
-    href: `mailto:${site.emails.ceo}?subject=Certificate%20of%20Existence%20Request`,
+    href: `mailto:${site.emails.ceo}?subject=Certificate%20of%20Good%20Standing%20Request`,
     note: "Typically provided within one business day.",
   },
   {
@@ -44,7 +44,7 @@ const verifySteps = [
   },
   {
     title: "Registered Address & Contact Verification",
-    body: "Our principal office address and contact emails listed on this page match our state registration and appear consistently across this website, our email domain (anthonyecom.com), and our business filings — the consistency banks look for during KYB checks.",
+    body: "We are a Wyoming LLC operating from our physical office in Cartersville, Georgia — a standard structure for US eCommerce businesses. The entity name, physical address and contact emails listed here appear consistently across this website, our email domain (anthonyecom.com), and our business filings — the consistency banks look for during KYB checks.",
     linkLabel: site.address,
     href: "https://maps.google.com/?q=31+Herring+St,+Cartersville,+GA+30120",
     note: "Address shown on every page footer of this site.",
@@ -135,7 +135,7 @@ export default function VerifyPage() {
             </p>
             <p className="mt-3 max-w-3xl text-sm leading-relaxed text-cream/85">
               If you are a bank, payment processor or platform verifying this business
-              and need any document — Certificate of Existence, Articles of
+              and need any document — Certificate of Good Standing, Articles of
               Organization, EIN confirmation, proof of address or a signed W-9 — email{" "}
               <a href={`mailto:${site.emails.ceo}`} className="text-volt">
                 {site.emails.ceo}
