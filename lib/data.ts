@@ -4,6 +4,8 @@ export const site = {
   founder: "Papa Anthony Thomas",
   domain: "https://anthonyecom.com",
   address: "31 Herring St, Cartersville, GA 30120, USA",
+  phone: "(470) 303-6327",
+  phoneHref: "+14703036327",
   emails: {
     ceo: "ceo@anthonyecom.com",
     info: "info@anthonyecom.com",

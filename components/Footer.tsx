@@ -68,6 +68,14 @@ export default function Footer() {
                   {site.emails.support}
                 </a>
               </p>
+              <p>
+                <span className="font-mono text-[11px] uppercase tracking-widest text-muted/70">
+                  Phone&nbsp;&nbsp;
+                </span>
+                <a href={`tel:${site.phoneHref}`} className="text-cream transition-colors hover:text-volt">
+                  {site.phone}
+                </a>
+              </p>
             </div>
           </div>
 

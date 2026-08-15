@@ -74,6 +74,14 @@ export default function ContactPage() {
                       {site.emails.support}
                     </a>
                   </p>
+                  <p>
+                    <span className="font-mono text-[11px] uppercase tracking-widest text-muted/70">
+                      Phone&nbsp;&nbsp;
+                    </span>
+                    <a href={`tel:${site.phoneHref}`} className="text-cream transition-colors hover:text-volt">
+                      {site.phone}
+                    </a>
+                  </p>
                   <p className="pt-2 text-xs text-muted/70">{site.address}</p>
                 </div>
               </div>

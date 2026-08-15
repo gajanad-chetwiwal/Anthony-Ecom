@@ -67,6 +67,7 @@ export default function RootLayout({
               legalName: site.legalName,
               url: site.domain,
               logo: `${site.domain}/icon.svg`,
+              telephone: site.phoneHref,
               founder: { "@type": "Person", name: site.founder, jobTitle: "Founder & CEO" },
               address: {
                 "@type": "PostalAddress",
@@ -79,7 +80,14 @@ export default function RootLayout({
               contactPoint: [
                 { "@type": "ContactPoint", email: site.emails.ceo, contactType: "CEO Mail" },
                 { "@type": "ContactPoint", email: site.emails.info, contactType: "customer service" },
-                { "@type": "ContactPoint", email: site.emails.support, contactType: "technical support" },
+                {
+                  "@type": "ContactPoint",
+                  email: site.emails.support,
+                  telephone: site.phoneHref,
+                  contactType: "technical support",
+                  areaServed: "US",
+                  availableLanguage: "English",
+                },
               ],
             }),
           }}
